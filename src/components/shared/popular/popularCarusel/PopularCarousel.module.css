@@ -1,0 +1,16 @@
+.swiper :global(.swiper-pagination) {
+    position: relative;
+    margin-top: 64px;
+    text-align: center;
+}
+
+.swiper :global(.swiper-pagination-bullet) {
+    background: #FF8C66;
+    transition: background-color 0.3s ease;
+    width: 18px;
+    height: 18px;
+}
+
+.swiper :global(.swiper-pagination-bullet-active) {
+    background: #FF5733;
+}

@@ -1,0 +1,66 @@
+.catalog {
+    background: #000000;
+    padding: 80px 160px;
+    display: flex;
+    gap: 32px;
+}
+
+.tvSeries {
+    width: 1288px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 68px;
+}
+
+.tvSeriesContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+.loadMoreBtn {
+    cursor: pointer;
+    width: 141px;
+    height: 48px;
+    border-radius: 16px;
+    background: #0F172A;
+    border: none;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #FF5733;
+    box-shadow: 0px 2px 4px 0px #FF5733;
+    transition: 0.3s ease;
+}
+
+.loadMoreBtn:hover {
+    background: #1E293B;
+    box-shadow: 0px 4px 8px 0px #FF5733;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 1440px) {
+    .catalog {
+        padding: 48px 96px;
+    }
+
+    .tvSeriesContainer {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 980px) {
+    .catalog {
+         padding: 40px clamp(16px, 5vw, 80px);
+        flex-direction: column;
+    }
+
+    .tvSeries {
+        width: 100%;
+    }
+}
+

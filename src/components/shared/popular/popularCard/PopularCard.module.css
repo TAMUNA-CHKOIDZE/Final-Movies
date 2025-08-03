@@ -1,0 +1,52 @@
+.popularCard img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.popularCard h4 {
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    margin-block: 8px 16px;
+    /* გრძელ სათაურს ბოლოში დაემატება სამი წერტილი და ქვევით არ ჩამოვარდება  */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.cardFooter p {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+.cardFooter span {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: #FF5733;
+    display: flex;
+    align-items: center;
+    column-gap: 2px;
+}
+
+.cardFooter img {
+    width: 16px;
+    height: 16px;
+}
